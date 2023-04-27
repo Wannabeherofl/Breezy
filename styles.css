@@ -19,11 +19,11 @@ html {
     --color-text-a50: hsla(60,93%,94%,0.5);
     --color-text-a75: hsla(60,93%,94%,0.75);
     --color-shadow: rgba(54,20,0,0.2);
-    --color-accent-1: #f40552;
-    --color-accent-1-a75: rgba(244,5,82,0.75);
-    --color-accent-1-a50: rgba(244,5,82,0.5);
-    --color-accent-1-a10: rgba(244,5,82,0.1);
-    --color-accent-1-s90: #e7064f;
+    --color-accent-1: #05b0f4;
+    --color-accent-1-a75: rgba(5, 109, 244, 0.75);
+    --color-accent-1-a50: rgba(5, 116, 244, 0.5);
+    --color-accent-1-a10: rgba(29, 5, 244, 0.1);
+    --color-accent-1-s90: #0695e7;
     --color-accent-2: #007892;
     --color-accent-2-a10: rgba(0,120,146,0.1);
     --f1: "Rubik";
@@ -69,7 +69,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-    font-size: var(--fs5)
+    font-size: 60px;
 }
 
 ::-moz-selection {
@@ -1295,6 +1295,11 @@ header .logo:hover {
     background-color: rgba(0,0,0,0)
 }
 
+.img-responsive {
+    margin: 0 auto;
+    width: auto;
+}
+
 header .logo-img {
     display: block;
     width: var(--q2);
@@ -1433,6 +1438,18 @@ header .burger-toggle {
         background-color:var(--color-bg);
         background-image: url(e6bab6e0eb003ff2ee71bc8e4330cff1.png)
     }
+}
+
+section.another-section {
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: var(--fs3);
+    padding: var(--q7) 0 var(--q13) 0;
+}
+
+.section {
+    padding: 100px 0;
+    z-index: 2;
 }
 
 section.features {
@@ -1577,7 +1594,7 @@ section.hero .lead {
 
 @media only screen and (min-width: 48em) {
     section.hero .lead {
-        font-size:var(--fs5)
+        font-size:var(--fs3)
     }
 }
 
@@ -1637,6 +1654,40 @@ section.hero .cta {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column
+}
+section.hero .cta #second-button {
+    padding: var(--q) var(--q2);
+    margin: 25px;
+    font-weight: 300;
+    font-family: var(--f1);
+    font-size: var(--fs3);
+    cursor: pointer;
+    color: var(--color-text);
+    background-color: var(--color-accent-1-a10);
+    background-image: url(5acaf3ca7e527ae76bc22212bbe7532f.png);
+    background-size: 25%;
+    -webkit-animation: bganim 40s linear 0s infinite;
+    animation: bganim 40s linear 0s infinite;
+    border: 2px solid var(--color-accent-1);
+    -webkit-box-shadow: 0 0 10px 0 var(--color-accent-1-a50);
+    box-shadow: 0 0 10px 0 var(--color-accent-1-a50);
+    -webkit-backdrop-filter: blur(var(--blur-radius));
+    backdrop-filter: blur(var(--blur-radius));
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background .2s ease;
+    -o-transition: background .2s ease;
+    transition: background .2s ease
+}
+
+section.hero .cta #second-button:hover {
+    background-color: var(--color-accent-1-s90);
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none
 }
 
 section.hero .cta #client-download {
@@ -1870,6 +1921,10 @@ section.hero .thanks.active {
     -o-transition-property: opacity,transform;
     transition-property: opacity,transform;
     transition-property: opacity,transform,-webkit-transform
+}
+
+.item {
+    width: 100%;
 }
 
 .langs {
