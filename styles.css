@@ -1656,6 +1656,7 @@ section.hero .cta {
     flex-direction: column
 }
 section.hero .cta #second-button {
+    border-radius: 12px;
     padding: var(--q) var(--q2);
     margin: 25px;
     font-weight: 300;
@@ -1691,6 +1692,7 @@ section.hero .cta #second-button:hover {
 }
 
 section.hero .cta #client-download {
+    border-radius: 12px;
     padding: var(--q) var(--q2);
     font-weight: 300;
     font-family: var(--f1);
