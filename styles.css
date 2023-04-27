@@ -25,7 +25,7 @@ html {
     --color-accent-1-a10: rgba(29, 5, 244, 0.1);
     --color-accent-1-s90: #0695e7;
     --color-accent-2: #007892;
-    --color-accent-2-a10: rgba(0,120,146,0.1);
+    --color-accent-2-a10: rgba(0, 208, 255, 0.1);
     --f1: "Rubik";
     --f2: "Montserrat";
     --fs08: 0.8rem;
@@ -1314,6 +1314,7 @@ header .logo .logo-title {
 }
 
 header .links {
+    text-shadow: 1px 1px #000000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1327,10 +1328,12 @@ header .links {
 }
 
 header .links a {
+    color: #0695e7;
+    border-radius: 12%;
     display: block;
     padding: var(--qh) var(--q);
     margin-left: var(--q);
-    background-color: var(--color-text-a10);
+    background-color: var(--color-text-a50);
     text-decoration: none
 }
 
@@ -1582,14 +1585,17 @@ section.hero {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    z-index: 2
+    z-index: 2;
+    text-shadow: 2px 1px #000000;
 }
 
 section.hero .lead {
     margin: 0;
     color: var(--color-text);
     font-family: var(--f2);
-    font-size: var(--fs3)
+    font-size: var(--fs3);
+    text-shadow: 2px 1px #000000;
+    background-color: var(--color-bg-a25);
 }
 
 @media only screen and (min-width: 48em) {
@@ -1628,8 +1634,9 @@ section.hero .lead {
 
 .bg-holder {
     position: relative;
-    background-image: url(73663161434ea35812a20da2e517f102.jpg);
-    background-size: cover;
+    background-image: url(/images/GTA-Background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     padding-bottom: var(--q2)
 }
 
@@ -1656,6 +1663,7 @@ section.hero .cta {
     flex-direction: column
 }
 section.hero .cta #second-button {
+    text-shadow: 2px 1px #000000;
     border-radius: 12px;
     padding: var(--q) var(--q2);
     margin: 25px;
@@ -1693,6 +1701,7 @@ section.hero .cta #second-button:hover {
 
 section.hero .cta #client-download {
     border-radius: 12px;
+    text-shadow: 2px 1px #000000;
     padding: var(--q) var(--q2);
     font-weight: 300;
     font-family: var(--f1);
