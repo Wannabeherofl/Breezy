@@ -1268,7 +1268,10 @@ header {
     padding: var(--q2) 0 0 0;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-    z-index: 2
+    z-index: 2;
+}
+.headerbar {
+    background-color: var(--color-accent-1-a10);
 }
 
 header .logo {
@@ -1547,22 +1550,22 @@ section.features article h2 .material-icons-outlined {
 
 section.features article.first {
     --icon-color: #07baae;
-    --shadow-color: rgba(7,186,174,0.05)
+    --shadow-color: #0068e734;
 }
 
 section.features article.second {
     --icon-color: #0785bd;
-    --shadow-color: rgba(7,133,189,0.05)
+    --shadow-color: #00a2e734;
 }
 
 section.features article.third {
-    --icon-color: #a2ba0b;
-    --shadow-color: rgba(162,186,11,0.05)
+    --icon-color: #0bbab7;
+    --shadow-color: #007be734;
 }
 
 section.features article.fourth {
-    --icon-color: #b9084e;
-    --shadow-color: rgba(185,8,94,0.05)
+    --icon-color: #088ab9;
+    --shadow-color: #00c1e734;
 }
 
 section.features .preamb {
@@ -1592,7 +1595,7 @@ section.hero {
 section.hero .lead {
     margin: 0;
     color: var(--color-text);
-    font-family: var(--f2);
+    font-family: var(--f1);
     font-size: var(--fs3);
     text-shadow: 2px 1px #000000;
     background-color: var(--color-bg-a25);
