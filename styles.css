@@ -58,8 +58,9 @@ html {
 
 body {
     background-color: var(--color-bg);
-    background-image: url(e6bab6e0eb003ff2ee71bc8e4330cff1.png);
-    background-size: 15%
+    background-image: url(/images/GTA-Background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -1452,7 +1453,8 @@ header .burger-toggle {
 }
 
 section.another-section {
-    border-top: 1px solid #eee;
+    margin: 0;
+    background-color: #161923;
     text-align: center;
     font-size: var(--fs3);
     padding: var(--q7) 0 var(--q13) 0;
@@ -1642,7 +1644,6 @@ section.hero .lead {
 
 .bg-holder {
     position: relative;
-    background-image: url(/images/GTA-Background.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     padding-bottom: var(--q2)
