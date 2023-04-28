@@ -1274,6 +1274,11 @@ header {
     background-color: var(--color-accent-1-a10);
 }
 
+.Rules {
+    text-align: center;
+    
+}
+
 header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
